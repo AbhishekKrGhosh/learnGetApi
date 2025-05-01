@@ -10,7 +10,7 @@ app.use("/api", routes);
 
 // Test API call every 5 min
 setInterval(() => {
-  fetch(`http://localhost:${PORT}/api/test`)
+  fetch('https://learngetapi.onrender.com/api/test')
     .then((res) => res.text())
     .then((data) => console.log("Auto test called:", data))
     .catch((err) => console.error("Test API error:", err));
